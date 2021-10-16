@@ -35,7 +35,7 @@ build:
 	make -C ./build -f ./project.build
 
 download:
-	./tools/bflb_flash_tool/bflb_mcu_tool --chipname=$(CHIP) --interface=$(INTERFACE) --baudrate=$(BAUDRATE)
+	./tools/bflb_flash_tool/bflb_mcu_tool --chipname=bl702 --interface=uart --baudrate=2000000 --port=$(COMx)
 	
 clean:
 	$(RM) out
